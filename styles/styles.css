@@ -1,0 +1,59 @@
+*,
+body {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #184A45FF;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px 8px;
+    font-size: 10px;
+    font-family: 'Overpass', Sans-Serif;
+}
+
+.home {
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 15px;
+    color: #FC766AFF;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1,
+.part2 {
+    width: 80%;
+    height: auto;
+    background-color: transparent;
+    border: 1px solid #FC766AFF;
+    border-radius: 0.5em;
+    text-align: center;
+    margin: 2vh;
+    padding: 1vh;
+    font-family: 'Overpass', Sans-Serif;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .flexbox {
+        flex-flow: row wrap;
+    }
+
+    .part1,
+    .part2 {
+        width: 40%;
+        margin: 5vh;
+    }
+
+    .navbar a {
+        padding: 14px 16px;
+        font-size: 20px;
+    }
+}
